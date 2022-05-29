@@ -5,7 +5,7 @@
 package DAO;
 
 import Entidades.Estudiante;
-import com.william.BD.ConexionAMYSQL;
+import com.alex.BD.ConexionAMYSQL;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;

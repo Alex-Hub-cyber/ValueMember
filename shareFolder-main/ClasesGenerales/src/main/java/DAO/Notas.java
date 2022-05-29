@@ -7,7 +7,7 @@ package DAO;
 import Entidades.Estudiante;
 import Entidades.Nota;
 import ViewModel.NotaVM;
-import com.william.BD.ConexionAMYSQL;
+import com.alex.BD.ConexionAMYSQL;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -60,6 +60,7 @@ public class Notas {
             while (resultado.next()) {
                 //Llamar a el objeto de entidades.
                 NotaVM es = new NotaVM();
+                
                 es.setNota(resultado.getString("nota"));
                 es.setNombremateria(resultado.getString("NombreMateria"));
                 es.setNombre(resultado.getString("Nombre"));

@@ -9,7 +9,15 @@ package Entidades;
  * @author William
  */
 public class Materia {
-    
+
+    public int getIdMateria() {
+        return IdMateria;
+    }
+
+    public void setIdMateria(int IdMateria) {
+        this.IdMateria = IdMateria;
+    }
+       int IdMateria;
     String NombreMateria;
 
     public String getNombreMateria() {
